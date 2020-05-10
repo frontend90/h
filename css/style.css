@@ -56,6 +56,11 @@ body.no-scroll {
 .container {
   max-width: 1170px;
   margin: auto;
+  height: 100%;
+}
+
+.header {
+  height: 100vh;
 }
 
 .header .header-nav .logo {
@@ -124,6 +129,104 @@ body.no-scroll {
   color: #ffffff;
   font-family: 'Roboto-Regular';
   font-size: 30px;
+}
+
+.header .header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.header .header-title h3 {
+  font-size: 44px;
+  letter-spacing: .88px;
+  color: #1d1e1f;
+}
+
+.header .header-title p {
+  font-family: 'Merriweather-LightItalic';
+  font-size: 16px;
+  letter-spacing: .48px;
+}
+
+.header .header-title .btn {
+  margin-top: 40px;
+}
+
+.header .header-title .btn button {
+  text-transform: uppercase;
+  width: 190px;
+  height: 55px;
+  border: 1px solid #000000;
+  font-family: 'Montserrat-Regular';
+  font-size: 13px;
+  letter-spacing: .52px;
+  color: #000000;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .header-title .btn button:hover {
+  background: #000000;
+  color: #898888;
+}
+
+.header .header-title .header-points {
+  width: 10px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header-title .header-points span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(208, 208, 208, 0.66);
+}
+
+.header .header-title .header-points::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(208, 208, 208, 0.33);
+  top: 0;
+}
+
+.header .header-title .header-points::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d0d0d0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 640px) {
@@ -244,6 +347,22 @@ body.no-scroll {
   }
   .header .header-nav .header-menu .menu .logo {
     display: none;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .header .header-title h3 {
+    font-size: 30px;
+  }
+  .header .header-title p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header .header-title h3 {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
