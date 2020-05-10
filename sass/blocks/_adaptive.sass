@@ -20,7 +20,16 @@
         & .box 
           margin-top: 50px 
     & .about-line 
-      display: none 
+      display: none
+@media screen and ( max-width: 820px )
+  .contact 
+    & .contact-form 
+      & form 
+        & input 
+          width: 95%
+        & .btn 
+          & button 
+            width: 95%
 @media screen and ( max-width: 800px )
   .team 
     & .team-wrap 
@@ -118,6 +127,14 @@
       & p 
         font-size: 13px 
         margin-top: 10px 
+@media screen and ( max-width: 500px )
+  .contact 
+    & .contact-item 
+      justify-content: center
+      flex-direction: column 
+      margin-top: 30px 
+      & .block 
+        margin-top: 30px 
 @media screen and ( max-width: 450px )
   .services 
     & .title 

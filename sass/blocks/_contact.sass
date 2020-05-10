@@ -1,0 +1,62 @@
+.contact
+  padding-top: 95px
+  & .title 
+    text-align: center
+    & h5 
+      font-size: 34px 
+      letter-spacing: .68px 
+      color: #1d1e1f 
+    & p 
+      +mer_italic
+      font-size: 16px 
+      letter-spacing: .32px 
+  & .contact-item 
+    margin-top: 60px 
+    display: flex 
+    justify-content: space-around
+    & .block 
+      text-align: center
+      & .fas 
+        +solid 
+        font-size: 16px 
+        color: #323232
+      & a 
+        display: block 
+        font-size: 12px 
+        letter-spacing: .24px 
+        color: #898888
+      & p 
+        font-size: 12px 
+        letter-spacing: .24px 
+  & .contact-form 
+    margin-top: 150px 
+    & form 
+      text-align: center
+      & input 
+        width: 770px 
+        height: 50px 
+        border: 1px solid #999999
+        text-align: center
+        margin-bottom: 20px 
+        letter-spacing: .3px 
+      & .big-box 
+        height: 195px 
+        text-align: left
+        padding-left: 20px 
+        &::placeholder 
+          transform: translateY(-70px)
+      & .btn 
+        & button 
+          width: 770px 
+          height: 50px 
+          background: #161616
+          color: #fefefe
+          +hel_md
+          font-size: 17px 
+          letter-spacing: .34px 
+          transition: .3s linear 
+          border: 1px solid transparent 
+          &:hover
+            background: #ffffff
+            color: #161616
+            border-color: #161616
