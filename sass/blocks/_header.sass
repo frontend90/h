@@ -1,0 +1,40 @@
+.header 
+  & .header-nav 
+    & .logo 
+      display: none 
+    & .header-menu
+      & .burger 
+        display: none 
+      & .menu 
+        display: flex 
+        align-items: center
+        justify-content: center
+        & a 
+          +rob_reg 
+          font-size: 13px 
+          letter-spacing: .52px 
+          color: #989696
+          margin: 0 20px
+          transition: .3s linear 
+          &:hover
+            color: #010101
+          &:first-of-type
+            margin-left: 0
+          &:last-of-type
+            margin-right: 0
+        & .logo 
+          width: 55px 
+          height: 55px 
+          background: #121212
+          cursor: pointer
+          display: block 
+          margin: 0 35px 
+          & h2 
+            text-transform: uppercase
+            display: flex 
+            align-items: center
+            justify-content: center
+            height: 100%
+            color: #ffffff
+            +rob_reg 
+            font-size: 30px 

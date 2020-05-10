@@ -1,0 +1,54 @@
+@font-face 
+  font-family: 'fa-solid-900'
+  src: url('../fonts/fa-solid-900.ttf')
+@mixin solid
+  font-family: 'fa-solid-900'
+@font-face 
+  font-family: 'fa-brands-400'
+  src: url('../fonts/fa-brands-400.ttf')
+@mixin brand
+  font-family: 'fa-brands-400'
+@font-face 
+  font-family: 'HelveticaNeueLTProLT'
+  src: url('../fonts/HelveticaNeueLTProLT.otf')
+@mixin hel_lt
+  font-family: 'HelveticaNeueLTProLT'
+@font-face 
+  font-family: 'HelveticaNeueLTProMD'
+  src: url('../fonts/HelveticaNeueLTProMD.otf')
+@mixin hel_md
+  font-family: 'HelveticaNeueLTProMD'
+@font-face 
+  font-family: 'HelveticaNeueLTProRoman'
+  src: url('../fonts/HelveticaNeueLTProRoman.otf')
+@mixin hel_roman
+  font-family: 'HelveticaNeueLTProRoman'
+@font-face 
+  font-family: 'Merriweather-LightItalic'
+  src: url('../fonts/Merriweather-LightItalic.ttf')
+@mixin mer_italic
+  font-family: 'Merriweather-LightItalic'
+@font-face 
+  font-family: 'Montserrat-Light'
+  src: url('../fonts/Montserrat-Light.ttf')
+@mixin mont_light
+  font-family: 'Montserrat-Light'
+@font-face 
+  font-family: 'Montserrat-Regular'
+  src: url('../fonts/Montserrat-Regular.ttf')
+@mixin mont_reg 
+  font-family: 'Montserrat-Regular'
+@font-face 
+  font-family: 'Roboto-Regular'
+  src: url('../fonts/Roboto-Regular.ttf')
+@mixin rob_reg 
+  font-family: 'Roboto-Regular'
+body 
+  +hel_lt
+  font-size: 15px 
+  color: #898888
+  &.no-scroll 
+    overflow: hidden
+.container 
+  max-width: 1170px 
+  margin: auto
