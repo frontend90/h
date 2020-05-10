@@ -1,6 +1,27 @@
-@media screen and ( max-width: 640px )
+@media screen and ( max-width: 1180px )
   .container 
     max-width: 95%
+@media screen and ( max-width: 950px )
+  .about 
+    padding: 100px 0 445px 0 
+    & .about-wrap 
+      justify-content: center
+      flex-direction: column 
+      & .block 
+        margin: auto
+        & .box 
+          margin-top: 50px 
+    & .about-line 
+      display: none 
+@media screen and ( max-width: 800px )
+  .team 
+    & .team-wrap 
+      justify-content: center
+      flex-direction: column 
+      margin-top: 75px 
+      & .card 
+        margin-top: 50px 
+@media screen and ( max-width: 640px )
   .header 
     & .header-nav 
       display: flex 
@@ -89,6 +110,11 @@
       & p 
         font-size: 13px 
         margin-top: 10px 
+@media screen and ( max-width: 440px )
+  .about 
+    & .about-wrap 
+      & .block 
+        width: 95%
 @media screen and ( max-width: 360px )
   .header 
     & .header-title 

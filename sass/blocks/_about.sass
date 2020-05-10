@@ -1,0 +1,60 @@
+.about 
+  background: #1d1d1d url(../img/about/bg.png) no-repeat
+  background-position: 40% 100% 
+  padding: 150px 0 445px 0 
+  position: relative
+  & .about-wrap 
+    display: flex 
+    justify-content: space-around
+    & .block 
+      width: 395px 
+      & .box 
+        & h5 
+          +hel_roman
+          font-size: 48px 
+          color: #fefefe
+          letter-spacing: .96px 
+        & p 
+          +mont_light 
+          letter-spacing: .3px 
+          color: #b7b7b7
+          line-height: 1.47 
+          text-align: justify
+    & .left 
+      & .box 
+        & h5 
+          text-align: right
+      & .box2 
+        margin-top: 255px 
+    & .right 
+      & .box1 
+        margin-top: 120px 
+      & .box2 
+        margin-top: 350px 
+  & .about-line 
+    width: 5px 
+    height: 100%
+    background: #ffffff
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    display: flex 
+    justify-content: center 
+    & span 
+      border-radius: 50%
+      border: 5px solid #ffffff
+      background: #1d1d1d
+      width: 24px 
+      height: 24px 
+      position: absolute
+    & .about-line1 
+      top: 165px 
+    & .about-line2 
+      top: 285px 
+    & .about-line3 
+      top: 535px
+      width: 46px 
+      height: 46px  
+    & .about-line4 
+      top: 770px 

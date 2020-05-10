@@ -229,10 +229,225 @@ body.no-scroll {
   bottom: 0;
 }
 
-@media screen and (max-width: 640px) {
+.about {
+  background: #1d1d1d url(../img/about/bg.png) no-repeat;
+  background-position: 40% 100%;
+  padding: 150px 0 445px 0;
+  position: relative;
+}
+
+.about .about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .about-wrap .block {
+  width: 395px;
+}
+
+.about .about-wrap .block .box h5 {
+  font-family: 'HelveticaNeueLTProRoman';
+  font-size: 48px;
+  color: #fefefe;
+  letter-spacing: .96px;
+}
+
+.about .about-wrap .block .box p {
+  font-family: 'Montserrat-Light';
+  letter-spacing: .3px;
+  color: #b7b7b7;
+  line-height: 1.47;
+  text-align: justify;
+}
+
+.about .about-wrap .left .box h5 {
+  text-align: right;
+}
+
+.about .about-wrap .left .box2 {
+  margin-top: 255px;
+}
+
+.about .about-wrap .right .box1 {
+  margin-top: 120px;
+}
+
+.about .about-wrap .right .box2 {
+  margin-top: 350px;
+}
+
+.about .about-line {
+  width: 5px;
+  height: 100%;
+  background: #ffffff;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about-line span {
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  background: #1d1d1d;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.about .about-line .about-line1 {
+  top: 165px;
+}
+
+.about .about-line .about-line2 {
+  top: 285px;
+}
+
+.about .about-line .about-line3 {
+  top: 535px;
+  width: 46px;
+  height: 46px;
+}
+
+.about .about-line .about-line4 {
+  top: 770px;
+}
+
+.team {
+  padding: 80px 0 100px 0;
+}
+
+.team .title {
+  text-align: center;
+}
+
+.team .title h5 {
+  font-size: 34px;
+  letter-spacing: .68px;
+  color: #1d1e1f;
+}
+
+.team .title p {
+  font-family: 'Merriweather-LightItalic';
+  font-size: 16px;
+  letter-spacing: .32px;
+}
+
+.team .team-wrap {
+  margin-top: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team .team-wrap .card {
+  text-align: center;
+}
+
+.team .team-wrap .card .desc {
+  margin-top: 25px;
+}
+
+.team .team-wrap .card .desc h6 {
+  font-family: 'HelveticaNeueLTProRoman';
+  font-size: 24px;
+  color: #464646;
+  letter-spacing: .48px;
+}
+
+.team .team-wrap .card .desc p {
+  font-family: 'HelveticaNeueLTProRoman';
+  font-size: 13px;
+  letter-spacing: .26px;
+  color: #b3b3b3;
+}
+
+.team .team-wrap .card .desc .social {
+  margin-top: 10px;
+}
+
+.team .team-wrap .card .desc .social a {
+  margin-left: 15px;
+}
+
+.team .team-wrap .card .desc .social a:first-of-type {
+  margin-left: 0;
+}
+
+.team .team-wrap .card .desc .social a .fab {
+  font-family: 'fa-brands-400';
+  font-size: 21px;
+  color: #e4e4e4;
+}
+
+.team .team-wrap .card1 {
+  margin-top: 90px;
+}
+
+.team .team-wrap .card3 {
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 1180px) {
   .container {
     max-width: 95%;
   }
+}
+
+@media screen and (max-width: 950px) {
+  .about {
+    padding: 100px 0 445px 0;
+  }
+  .about .about-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .about-wrap .block {
+    margin: auto;
+  }
+  .about .about-wrap .block .box {
+    margin-top: 50px;
+  }
+  .about .about-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .team .team-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 75px;
+  }
+  .team .team-wrap .card {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .header .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -357,6 +572,12 @@ body.no-scroll {
   .header .header-title p {
     font-size: 13px;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .about .about-wrap .block {
+    width: 95%;
   }
 }
 
